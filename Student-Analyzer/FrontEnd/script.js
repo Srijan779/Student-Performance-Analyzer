@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
             searchBtn.innerText = "Searching...";
 
             try {
-                const response = await fetch(`http://127.0.0.1:5000/api/search/${name}`);
+                const response = await fetch(`https://student-performance-backend-xpab.onrender.com/api/search/${name}`);
                 if (!response.ok) throw new Error("Student not found");
                 
                 const data = await response.json();
@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
             };
 
             try {
-                const response = await fetch('http://127.0.0.1:5000/api/predict', {
+                const response = await fetch('https://student-performance-backend-xpab.onrender.com/api/predict', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify(studentData)
