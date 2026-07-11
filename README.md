@@ -1,2 +1,2 @@
 # Student-Performance-Analyzer
-[![Deployed with Vercel](https://vercel.com/button)](https://student-performance-analyzer-psi.vercel.app)
+Check out the live website here: [Student Performance Analyzer](https://student-performance-analyzer-psi.vercel.app)
