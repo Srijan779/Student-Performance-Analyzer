@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis Results</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card result-card">
+        <h1 class="title" style="text-align: left;">📊 Analysis Results</h1>
+        <h3 id="res-name" style="color: #38bdf8; margin-bottom: 25px; font-weight: 500;">Student Name</h3>
+        
+        <div class="stats-grid">
+            <div class="stat-box">
+                <p class="stat-title">Performance Category</p>
+                <p class="stat-value" id="res-category">Loading...</p>
+            </div>
+            <div class="stat-box">
+                <p class="stat-title">Overall Score</p>
+                <p class="stat-value text-success"><span id="res-score">0</span>/100</p>
+            </div>
+            <div class="stat-box">
+                <p class="stat-title">Academic Risk</p>
+                <p class="stat-value" id="res-risk">Low Risk ✅</p>
+            </div>
+        </div>
+
+        <div class="recommendations-box">
+            <h4>Skill Gaps & Recommendations</h4>
+            <ul id="res-recs">
+                </ul>
+        </div>
+
+        <button class="btn-secondary" onclick="window.location.href='index.html'" style="max-width: 250px;">Analyze Another Student</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

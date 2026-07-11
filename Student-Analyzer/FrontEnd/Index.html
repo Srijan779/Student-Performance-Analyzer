@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Performance Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <h1 class="title">Student Performance Analyzer</h1>
+        <p class="subtitle">Evaluate academic and technical skills</p>
+        
+        <div class="search-box">
+            <label for="searchName">🔍 Search Existing Student</label>
+            <div class="search-flex">
+                <input type="text" id="searchName" placeholder="Enter name to search database...">
+                <button type="button" id="searchBtn" class="search-btn">Search</button>
+            </div>
+        </div>
+
+        <hr>
+
+        <form id="analyzerForm">
+            <h3 class="section-title">New Analysis Entry</h3>
+            
+            <div class="input-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="Student Name" required>
+            </div>
+
+            <div class="input-grid">
+                <div class="input-group">
+                    <label for="cgpa">CGPA (Out of 10)</label>
+                    <input type="number" step="0.1" id="cgpa" placeholder="e.g. 8.5" required>
+                </div>
+                <div class="input-group">
+                    <label for="goal">Career Goal</label>
+                    <input type="text" id="goal" placeholder="e.g. Data Scientist" required>
+                </div>
+            </div>
+
+            <div class="input-grid">
+                <div class="input-group">
+                    <label for="experience">Coding Experience (Years)</label>
+                    <input type="number" id="experience" placeholder="e.g. 2" required>
+                </div>
+                <div class="input-group">
+                    <label for="level">Coding Level</label>
+                    <select id="level" required>
+                        <option value="Beginner">Beginner</option>
+                        <option value="Intermediate">Intermediate</option>
+                        <option value="Advanced">Advanced</option>
+                    </select>
+                </div>
+            </div>
+
+            <button type="submit" id="submitBtn">Analyze Performance</button>
+        </form>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
