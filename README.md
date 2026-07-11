@@ -1,2 +1,2 @@
 # Student-Performance-Analyzer
-website link: student-performance-analyzer-psi.vercel.app
+student-performance-analyzer-psi.vercel.app
